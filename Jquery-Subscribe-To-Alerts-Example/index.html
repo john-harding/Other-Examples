@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Big Human - Pop Alert</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Edit your Big Human pop up alerts!">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body class="pop-alerts">
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h1>Pop Alerts</h1>
+					<button class="btn-menu" type="button"></button>
+					<ul class="menu-list">
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Terms of Use</a></li>
+						<li><a href="#">Settings</a></li>
+						<li><a href="#">Logout</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="section-edit">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 edit-search">
+					<div class="clearfix">
+						<input class="alert-search" type="text" value="" placeholder="Find Alerts">
+						<button class="btn-search" type="button"><span></span></button>
+					</div>
+				</div>
+				<div class="col-xs-12 toggle-type">
+					<div class="toggle-wrapper">
+						<button class="toggle-list" data-type="popular" type="button">Popular Alerts</button><button class="toggle-list active" data-type="personal" type="button">Your Alerts</button>
+					</div>
+				</div>
+				<div class="col-xs-12 list-alerts" id="popular-alerts">
+					<ul>
+						<li><a href="#"><span>John Harding</span><span class="edit">Edit</span></a></li>
+						<li><a href="#"><span>NYC</span><span class="edit">Edit</span></a></li>
+						<li><a href="#"><span>Utah</span><span class="edit">Edit</span></a></li>
+						<li><a href="#"><span>NFL</span><span class="edit">Edit</span></a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 list-alerts active" id="personal-alerts">
+					<ul>
+						<li><a href="#"><span>Jay Z</span><span class="edit">Edit</span></a></li>
+						<li><a href="#"><span>Beyonce</span><span class="edit">Edit</span></a></li>
+						<li><a href="#"><span>Kanye West</span><span class="edit">Edit</span></a></li>
+						<li><a href="#"><span>Lebron James</span><span class="edit">Edit</span></a></li>
+						<li><a href="#"><span>New York Yankees</span><span class="edit">Edit</span></a></li>
+						<li><a href="#"><span>Steve Spurgat</span><span class="edit">Edit</span></a></li>
+						<li><a href="#"><span>Flipboard</span><span class="edit">Edit</span></a></li>
+						<li><a href="#"><span>Syria</span><span class="edit">Edit</span></a></li>
+						<li><a href="#"><span>Barack Obama</span><span class="edit">Edit</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+</html>

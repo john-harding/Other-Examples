@@ -1,0 +1,163 @@
+/*
+   NOTE: I use some properties that would need vendor
+   prefixes and some won't work in IE8 and previous
+ */
+
+* {
+	font-family:Arial,Helvetica,sans-serif;
+}
+
+header {
+	padding:15px 0;
+	background:#353541;
+}
+
+header h1 {
+	margin:0;
+	color:#FFF;
+	text-transform:uppercase;
+	letter-spacing:7px;
+}
+
+.section-edit {
+	padding:55px 0;
+}
+
+.section-edit .edit-title {
+	text-align:center;
+}
+
+.section-edit .edit-title h2 {
+	margin-bottom:45px;
+	color:#0AF;
+	font-weight:600;
+	text-align:center;
+	text-transform:uppercase;
+	letter-spacing:3px;
+}
+
+.section-edit .edit-title i {
+	color:#353541;
+}
+.section-edit .edit-title i.fa-pencil {
+	margin-right:7px;
+}
+.section-edit .edit-title i.fa-cog {
+	font-size:65px;
+}
+
+.section-edit .input-label {
+	color:#555;
+	text-align:right;
+	font-size:16px;
+	font-weight:600;
+	line-height:38px;
+	letter-spacing:2px;
+	transition:color .3s;
+}
+
+.section-edit .input-label.input-focus {
+	color:#0AF;
+}
+
+.section-edit .row form {
+	opacity:0;
+	filter:alpha(opacity=0);
+	transition:opacity .5s, filter .5s;
+}
+
+.section-edit .row form.show {
+	opacity:1;
+	filter:alpha(opacity=100);
+}
+
+.section-edit .row form div {
+	margin-bottom:20px;
+}
+
+.section-edit .user-input {
+	display:block;
+	padding:8px 12px;
+	border:1px #C0C5CA solid;
+	font-size:16px;
+	width:250px;
+	outline:none;
+	border-radius:2px;
+}
+
+.section-edit .user-email ~ .user-email {
+	margin-top:10px;
+}
+
+.section-edit .user-input.input-inline{
+	display:inline;
+}
+
+.section-edit .plus-icon {
+	padding:5px 10px;
+	color:#0AF;
+	font-size:20px; 
+}
+
+.section-edit .plus-icon:hover {
+	color:#09E;
+}
+
+.section-edit .plus-icon:active {
+	color:#000;
+}
+
+.section-edit .user-input:focus {
+	border-color:#A0A5AA;
+}
+
+.section-edit .row form .input-submit {
+	text-align:center;
+}
+
+.section-edit .row form .input-submit button {
+	margin-top:25px;
+	padding:10px 0;
+	width:150px;
+	color:#FFF;
+	background:#0AF;
+	border:0;
+	font-size:18px;
+	font-weight:600;
+	letter-spacing:2px;
+	outline:0;
+}
+
+.section-edit .row form .input-submit button:hover {
+	background:#09E;
+}
+
+.section-edit .row form .input-submit button:active {
+	background:#000;
+}
+
+.section-edit .row form .input-submit .fa-check, .section-edit .row form .input-submit .fa-times {
+	display:none;
+	color:#FFF;
+}
+
+.section-edit .row form .input-submit.input-check button {
+	background:#0C0;
+}
+
+.section-edit .row form .input-submit.input-check button .fa-check {
+	display:inline;
+}
+
+.section-edit .row form .input-submit.input-check button span,.section-edit .row form .input-submit.input-fail button span {
+	display:none;
+}
+
+
+.section-edit .row form .input-submit.input-fail button {
+	background:#C00;
+}
+
+.section-edit .row form .input-submit.input-fail button .fa-times {
+	display:inline;
+}
